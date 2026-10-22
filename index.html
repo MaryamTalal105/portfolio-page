@@ -7,31 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <header>
-    <h1>Maryam Talal</h1>
+    <h1 id="name">Maryam Talal</h1>
     <h2>Future Software Engineer</h2>
     <nav>
         <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
 <body>
     <!-- About me section -->
-    <section>
-        <h2>About Me</h2>
+     <main>
+        <!-- id for navigation , class for styling -->
+    <section class="card" id="About">
+        <h2 class="subtitle">About Me</h2>
         <figure>
-            <img src="" alt="My profile photo">
+            <img src="./assets/My_img.jpeg" alt="My profile photo">
         </figure>
-        <p>Hello! My name is Maryam.I am learning web developmet to be able to build fun and creative website with a high impact.<br>My goal is to become an Software Engineer who can help in building meaningful products that make people's life easier and more enjoyable</p>
+        <p>Hello! My name is Maryam, and I am a senior programming student. I am learning web development to be able to build fun and creative websites with high impact.<br>My goal is to become a Software Engineer who can helps build meaningful products that make people's lives easier and more enjoyable.</p>
     </section>
+     </main>
 
     <!-- Skills section -->
-    <section>
-        <h2>Skills</h2>
+    <section class="card" id="Skills">
+        <h2 class="subtitle">Skills</h2>
         <ul>
             <li>HTML and CSS</li>
             <li>Github</li>
@@ -42,8 +45,8 @@
         </ul>
     </section>
     <!-- Projects section -->
-    <section>
-        <h2>Projects</h2>
+    <section class="card" id="Projects">
+        <h2 class="subtitle">Projects</h2>
         <!-- Project 1 -->
         <article>
             <h3>Crysteria</h3>
@@ -52,7 +55,7 @@
         <!-- Project 2 -->
         <article>
             <h3>Shine</h3>
-            <p>A skincare e-commerce website built using HTML, CSS and JS with a team./p>
+            <p>A skincare e-commerce website built using HTML, CSS and JS with a team.</p>
         </article>
         <!-- Project 3 -->
         <article>
@@ -61,8 +64,8 @@
         </article>
     </section>
     <!-- Contact section -->
-    <section>
-        <h2>Contact</h2>
+    <section class="card" id="Contact">
+        <h2 class="subtitle">Contact</h2>
         <p>Email: <a href="mailto:maryam.talal25052@gmail.com">maryam.talal25052@gmail.com</a></p>
         <p>Github: <a href="https://github.com/MaryamTalal105">github.com/MaryamTalal105</a></p>
         <p>Location: West Riffa, Bahrain</p>
@@ -70,7 +73,8 @@
 
     <footer>
         <p>&copy; 2026 Maryam Talal</p>
-        <a href="">Back to top</a>
+        <!-- # tells the browser to move to the top -->
+        <a href="#">Back to top</a>
     </footer>
 </body>
 </html>
